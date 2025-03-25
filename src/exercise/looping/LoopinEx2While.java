@@ -3,15 +3,19 @@ package exercise.looping;
 public class LoopinEx2While {
 	
 	public static void main(String[] args) {
+		int num=100;
+		sumTotal(num);
+	}
+	public static void sumTotal(int n) {
 		int total=0;
-		System.out.println("Number from 1 to 100 :");
+		System.out.print("Number from 1 to "+n+" : ");
 		int i=1;
-		while(i<=100) {
-			System.out.println(i);
+		while(i<=n) {
+			System.out.print(i+" ");
 			total+=i;
 			i++;
-		}
-		System.out.println("Sum of number from 1 to 100 : "+total);
+		}System.out.println("");
+		System.out.println("Sum of number from 1 to "+n+" : "+total);
 	}
 
 }

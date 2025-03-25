@@ -3,11 +3,15 @@ package exercise.looping;
 public class LoopingEx1For {
      
 	public static void main(String[] args) {
+		int num=5;
+		System.out.println("Factorial of "+num+" is "+ factorial(num));
+	}
+	public static int factorial(int num){
 		int factorial=1;
-		for(int i=5;i>0;i--) {
+		for(int i=num;i>0;i--) {
 	           factorial*=i;
 			}
-		System.out.println("Factorial of 5 is "+factorial);
+		return factorial;
 	}
 
 }
